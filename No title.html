@@ -98,6 +98,16 @@
   </div>
   <script src='jquery-2.2.4.js'></script>
   <script>
+    window.onload = function () {
+      setInterval('sound()', 100)
+    }
+    function sound() {
+      let music = document.getElementById('vd')
+      if (music.paused) {
+        music.paused = false
+        music.play()
+      }
+    }
     // 开启一个独立的空间避免全局变量污染
     (function () {
       var VideoId = $("#VideoId");
@@ -329,7 +339,7 @@
           $('#box').append(liElem);
 
         })
-        a = $('<audio controls="controls" src="http://m701.music.126.net/20220101024140/72a961283f438f55a1e8852620d8c359/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/10530147439/43a5/1440/23b8/0707224ad9ee49fb3472dd80e9d86c50.mp3"></audio >')
+        a = $('<audio id="vd" loop autoplay controls="controls" src="http://m10.music.126.net/20220101031245/a18689953ebb73b63c227c903a822433/ymusic/065f/535e/0609/1509de64b4d4de295cde1ce7b031ff7e.mp3"></audio >')
         $('#box').append(a);
         // let a = $('<audio src="http://www.kugou.com/song/#hash=08228af3cb404e8a4e7e9871bf543ff6" controls="controls" id="audio" class="audio" />')
         // $('#box').append(a);
