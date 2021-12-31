@@ -98,16 +98,16 @@
   </div>
   <script src='jquery-2.2.4.js'></script>
   <script>
-    window.onload = function () {
-      setInterval('sound()', 100)
-    }
-    function sound() {
-      let music = document.getElementById('vd')
-      if (music.paused) {
-        music.paused = false
-        music.play()
-      }
-    }
+    // window.onload = function () {
+    //   setInterval('sound()', 100)
+    // }
+    // function sound() {
+    //   let music = document.getElementById('vd')
+    //   if (music.paused) {
+    //     music.paused = false
+    //     music.play()
+    //   }
+    // }
     // 开启一个独立的空间避免全局变量污染
     (function () {
       var VideoId = $("#VideoId");
