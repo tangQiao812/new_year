@@ -173,7 +173,7 @@
         liElemFristSiteZ = parseInt('-' + liElemDepMaxDist / 2) * liElemOffsetZ,
 
         // 文本内容
-        data = ['裴晚城', '汪小西', '周小矿', '明天吃什么', '天天开心', '能吃能睡', '元旦快乐',];
+        data = ['裴晚城', '汪小西', '周小矿', '明天吃什么', '天天开心', '能吃能睡', '元旦快乐', '更有钱', '更可爱', '不要减肥', '笑口常开', '升级加薪', '万事胜意', '没烦恼', '每天都有好事', '每天都吃小蛋糕', '身体健康', '所念皆如愿', '没想到吧', '交作业啦', '不生病', '骄傲美丽', '不要羡慕别人', '我说到做到'];
 
       // 指定一个区间，获取一个随机数
       randomFrom = (lowerValue, upperValue) => {
@@ -365,6 +365,15 @@
             case '元旦快乐': curveLayout(); break;
             case '天天开心': sphereLayout(); break;
             case '明天吃什么': chaoticLayout(); break;
+            case '骄傲美丽': gridLayout(); break;
+            case '不生病': helixLayout(); break;
+            case '更可爱': threeLayout(); break;
+            case '更有趣': geomeLayout(); break;
+            case '升职加薪': curveLayout(); break;
+            case '万事胜意': sphereLayout(); break;
+            case '不用减肥': chaoticLayout(); break;
+            case '不要羡慕别人': chaoticLayout(); break;
+            case '我说到做到': gridLayout(); break;
 
             default:
               while (true) {
